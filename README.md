@@ -29,8 +29,6 @@ more detailed walk through, please use the following repositories:
 - [Installing NVM & Node.js on MacOS][]
 - [Installing NVM & Node.js on WSL2][]
 
-
-
 ## The ts.config file
 
 - what does this file do
@@ -51,6 +49,6 @@ more detailed walk through, please use the following repositories:
 ## Resources
 
 - [Download TypeScript](https://www.typescriptlang.org/download)
-- [Node.js Installation](https://nodejs.org/en/)
+- [Node.js Installation Docs](https://nodejs.org/en/)
 - [Installing NVM & Node.js on MacOS](https://github.com/learn-co-curriculum/phase-0-macos-env-nodejs)
 - [Installing NVM & Node.js on WSL2](https://github.com/learn-co-curriculum/phase-0-wsl2-env-nodejs)
