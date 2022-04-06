@@ -24,10 +24,22 @@ change default rules, and add some rules of our own!
 
 You should already have Node Installed on your machine, but if you haven't,
 please do so following the [Node.js Installation Docs][]. If you would like a
-more detailed walk through, please use the following repositories:
+more detailed walk through, please check out the following repositories:
 
 - [Installing NVM & Node.js on MacOS][]
 - [Installing NVM & Node.js on WSL2][]
+
+While we can install TypeScript globally, it's generally best practice to do so
+on a project-by-project basis to avoid different versioning across machines.
+Let's install TypeScript to this project by running the following code in your
+terminal _(Remember to cd into the correct project directory!)_:
+
+```console
+$ npm install typescript --save-dev
+```
+
+Once this is done installing, you should see some node_modules files appear into
+our file directory. Our next step is adding in our `ts-config.json` file.
 
 ## The ts.config file
 
@@ -48,7 +60,8 @@ more detailed walk through, please use the following repositories:
 
 ## Resources
 
-- [Download TypeScript](https://www.typescriptlang.org/download)
+- [TS Docs - Download TypeScript](https://www.typescriptlang.org/download)
 - [Node.js Installation Docs](https://nodejs.org/en/)
 - [Installing NVM & Node.js on MacOS](https://github.com/learn-co-curriculum/phase-0-macos-env-nodejs)
 - [Installing NVM & Node.js on WSL2](https://github.com/learn-co-curriculum/phase-0-wsl2-env-nodejs)
+- [TS Docs - tsconfig-json](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html)
