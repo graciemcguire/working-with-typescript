@@ -44,10 +44,6 @@ our `tsconfig.json` file.
 
 ## The tsconfig.json file
 
-- what does this file do
-- checkout the provided tsc file
-- run tsc to see the errors
-
 So what _is_ the tsconfig.json file? The tsconfig file is used to help us
 configure and compile our code! This file is _always_ kept in the root of our
 project, and is used to identify the compiler rules we want to enforce, as well
@@ -101,26 +97,68 @@ You should now have an object that looks something like this:
 }
 ```
 
-For this exercise, we're working with a very simple `tscconfig.json` file, but
+For this exercise, we're working with a very simple `tsconfig.json` file, but
 it's definitely worth taking a look at the [TypeScript Docs - tsconfig][] for
 more compiler options and properties to add to your projects in the future!
 
 ## Compiling with `tsc`
 
+- run tsc to see the errors
 - then fix the errors
 - then run tsc to see there are no more errors
 - run node index.js to run our code
 - submit code
 
+Now that we have our `tsconfig.json` setup, we're able to compile our code using
+the `tsc` command! There's a ton of different compiler options for us (check out
+[TypeScript Docs - Compiler Options][] to see them all!) to use... we can use
+the command by adding a specific file to it like `npx tsc index.ts`, or we can
+run it as is `npx tsc`!
+
+At a high level, when we run `npx tsc`, our program takes our `.ts` files and
+_compiles_ them into JavaScript code, or `.js` files. Woah! This command not
+only creates our `.js` files in the same directory as our `.ts` files, but also
+is how we are able to see the errors and bugs that the transpiler has found,
+allowing us to fix them immediately.
+
+If you try running `npx tsc` right now however, you'll probably get an error
+back saying something like this:
+
+```zsh
+error TS18003: No inputs were found in config file
+```
+
+Let's fix that by creating some files to test this out!
+
+- Create a file `index.ts`
+- In your file add console.log of a string saying _"Hello, TypeScript World!"_
+- Now run `npx tsc`
+- You should now have a newly created `index.js` file
+- Let's run our js file to see our message print out into the console
+
+```zsh
+node index.js
+```
+
 ## Conclusion
 
-- we did all these things
+In this lesson we were able to set up our local environment to run TypeScript
+files, and configure our own tsconfig.json file from scratch. We also learned
+how to use the TypeScript compiler to run our code and compile our `.ts` files
+into JavaScript!
 
-## Resources
+## Installation Resources
 
 - [TypeScript Docs - Download TypeScript](https://www.typescriptlang.org/download)
 - [Node.js Installation Docs](https://nodejs.org/en/)
 - [Installing NVM & Node.js on MacOS](https://github.com/learn-co-curriculum/phase-0-macos-env-nodejs)
 - [Installing NVM & Node.js on WSL2](https://github.com/learn-co-curriculum/phase-0-wsl2-env-nodejs)
+
+## Configuration Resources
+
 - [TypeScript Docs - tsconfig](https://www.typescriptlang.org/tsconfig)
+- [TypeScript Docs - module](https://www.typescriptlang.org/tsconfig#module)
 - [TypeScript Docs - target](https://www.typescriptlang.org/tsconfig#target)
+- [TypeScript Docs - strictNullChecks](https://www.typescriptlang.org/tsconfig#strictNullChecks)
+- [TypeScript Docs - include](https://www.typescriptlang.org/tsconfig#include)
+- [TypeScript Docs - Compiler Options](https://www.typescriptlang.org/docs/handbook/compiler-options.html)
