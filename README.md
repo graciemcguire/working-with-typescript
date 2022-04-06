@@ -2,9 +2,9 @@
 
 ## Learning Goals
 
-- Successfully setting up local environment to run TypeScript
-- Understanding the ts.config file
-- Compiling with `tsc`
+- Successfully set up a local environment to run TypeScript
+- Configure and understand the tsconfig.json file
+- Practice compiling with `tsc`
 
 ## Introduction
 
@@ -34,18 +34,76 @@ on a project-by-project basis to avoid different versioning across machines.
 Let's install TypeScript to this project by running the following code in your
 terminal _(Remember to cd into the correct project directory!)_:
 
-```console
+```zsh
 $ npm install typescript --save-dev
 ```
 
-Once this is done installing, you should see some node_modules files appear into
-our file directory. Our next step is adding in our `ts-config.json` file.
+Once TypeScript is done installing into our project, you should see some
+node_modules files appear into our file directory. Our next step is adding in
+our `tsconfig.json` file.
 
-## The ts.config file
+## The tsconfig.json file
 
 - what does this file do
 - checkout the provided tsc file
 - run tsc to see the errors
+
+So what _is_ the tsconfig.json file? The tsconfig file is used to help us
+configure and compile our code! This file is _always_ kept in the root of our
+project, and is used to identify the compiler rules we want to enforce, as well
+as specify the root files of the project. The rules the compiler enforces are
+completely customizable and up to you to determine based on your project needs.
+
+There's unlimited ways that you can setup your tsconfig.json file, and a lot of
+different properties you can add to it.
+
+Let's create our tsconfig.json file in the root of our project directory by
+running:
+
+```zsh
+$ touch tsconfig.json
+```
+
+Awesome. Now let's fill in our properties. Were going to start with a
+`"compilerOptions"` key with an object as it's value. The `"compilerOptions"`
+object property is what we will use to declare the rules we want to enforce in
+our project. Inside of the `"compilerOptions"` object, we're going to add 3
+properties.
+
+Let's start by adding the property`"module"`, and setting it's value to
+`"commonjs"`. This tells TypeScript that we intend to use `commonjs` syntax for
+importing and exporting modules. Next, add the `"target"` property.
+
+The `"target"` property is used to tell TypeScript what version of ECMAscript we
+will be using. Because all modern browsers are able to use `es6`, let's set that
+value to `"es6"`. If we were sure we would only be using newer or updated
+browsers we could set our value to include the year (e.g. `es2022`), or even
+`esnext`.
+
+Our final property to add is`"strictNullChecks"`, which makes sure no variable
+has the value of `null` or `undefined` unless we explicitly assign them.
+
+Let's add one more property to our json object, `"include": ["**/*.ts"]`. The
+`include` property tells our compiler what files to check our rules against. Our
+value, `["**/*.ts"]`, tells the compiler to run these rules against every file
+in our project that has the extension `.ts`.
+
+You should now have an object that looks something like this:
+
+```json
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es6",
+    "strictNullChecks": true
+  },
+  "include": ["**/*.ts"]
+}
+```
+
+For this exercise, we're working with a very simple `tscconfig.json` file, but
+it's definitely worth taking a look at the [TypeScript Docs - tsconfig][] for
+more compiler options and properties to add to your projects in the future!
 
 ## Compiling with `tsc`
 
@@ -60,8 +118,9 @@ our file directory. Our next step is adding in our `ts-config.json` file.
 
 ## Resources
 
-- [TS Docs - Download TypeScript](https://www.typescriptlang.org/download)
+- [TypeScript Docs - Download TypeScript](https://www.typescriptlang.org/download)
 - [Node.js Installation Docs](https://nodejs.org/en/)
 - [Installing NVM & Node.js on MacOS](https://github.com/learn-co-curriculum/phase-0-macos-env-nodejs)
 - [Installing NVM & Node.js on WSL2](https://github.com/learn-co-curriculum/phase-0-wsl2-env-nodejs)
-- [TS Docs - tsconfig-json](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html)
+- [TypeScript Docs - tsconfig](https://www.typescriptlang.org/tsconfig)
+- [TypeScript Docs - target](https://www.typescriptlang.org/tsconfig#target)
