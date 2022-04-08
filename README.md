@@ -109,7 +109,7 @@ more compiler options and properties to add to your projects in the future!
 - run node index.js to run our code
 - submit code
 
-Now that we have our `tsconfig.json` setup, we're able to compile our code using
+Now that we have our `tsconfig.json` set up, we're able to compile our code using
 the `tsc` command! There's a ton of different compiler options for us (check out
 [TypeScript Docs - Compiler Options][] to see them all!) to use... we can use
 the command by adding a specific file to it like `npx tsc index.ts`, or we can
