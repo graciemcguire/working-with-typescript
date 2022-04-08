@@ -22,7 +22,7 @@ change default rules, and add some rules of our own!
 - fork and clone this lab, then open in your text editor
 - install ts globally
 
-You should already have Node Installed on your machine, but if you haven't,
+You should already have Node Installed on your machine, but if you don't,
 please do so following the [Node.js Installation Docs][]. If you would like a
 more detailed walk through, please check out the following repositories:
 
