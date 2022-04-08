@@ -63,7 +63,7 @@ object property is what we will use to declare the rules we want to enforce in
 our project. Inside of the `"compilerOptions"` object, we're going to add 3
 properties.
 
-Let's start by adding the property`"module"`, and setting it's value to
+Let's start by adding the property `"module"`, and setting its value to
 `"commonjs"`. This tells TypeScript that we intend to use `commonjs` syntax for
 importing and exporting modules. Next, add the `"target"` property.
 
