@@ -50,7 +50,7 @@ project, and is used to identify the compiler rules we want to enforce, as well
 as specify the root files of the project. The rules the compiler enforces are
 completely customizable and up to you to determine based on your project needs.
 
-There's unlimited ways that you can setup your tsconfig.json file, and a lot of
+There's unlimited ways that you can set up your tsconfig.json file, and a lot of
 different properties you can add to it.
 
 Let's create our tsconfig.json file in the root of our project directory by
