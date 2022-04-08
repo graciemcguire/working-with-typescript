@@ -61,7 +61,7 @@ $ touch tsconfig.json
 ```
 
 Awesome. Now let's fill in our properties. Were going to start with a
-`"compilerOptions"` key with an object as it's value. The `"compilerOptions"`
+`"compilerOptions"` key with an object as its value. The `"compilerOptions"`
 object property is what we will use to declare the rules we want to enforce in
 our project. Inside of the `"compilerOptions"` object, we're going to add 3
 properties.
