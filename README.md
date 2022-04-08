@@ -19,9 +19,6 @@ change default rules, and add some rules of our own!
 
 ## Environment Setup
 
-- fork and clone this lab, then open in your text editor
-- install ts globally
-
 You should already have Node Installed on your machine, but if you don't,
 please do so following the [Node.js Installation Docs][]. If you would like a
 more detailed walk through, please check out the following repositories:
@@ -103,12 +100,6 @@ more compiler options and properties to add to your projects in the future!
 
 ## Compiling with `tsc`
 
-- run tsc to see the errors
-- then fix the errors
-- then run tsc to see there are no more errors
-- run node index.js to run our code
-- submit code
-
 Now that we have our `tsconfig.json` set up, we're able to compile our code using
 the `tsc` command! There's a ton of different compiler options for us (check out
 [TypeScript Docs - Compiler Options][] to see them all!) to use... we can use
@@ -131,7 +122,7 @@ error TS18003: No inputs were found in config file
 Let's fix that by creating some files to test this out!
 
 - Create a file `index.ts`
-- In your file add console.log of a string saying _"Hello, TypeScript World!"_
+- In your file, let's console.log a string saying _"Hello, TypeScript World!"_
 - Now run `npx tsc`
 - You should now have a newly created `index.js` file
 - Let's run our js file to see our message print out into the console
