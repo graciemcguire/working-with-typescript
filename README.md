@@ -22,7 +22,7 @@ change default rules, and add some rules of our own!
 - fork and clone this lab, then open in your text editor
 - install ts globally
 
-You should already have Node Installed on your machine, but if you haven't,
+You should already have Node Installed on your machine, but if you don't,
 please do so following the [Node.js Installation Docs][]. If you would like a
 more detailed walk through, please check out the following repositories:
 
@@ -50,7 +50,7 @@ project, and is used to identify the compiler rules we want to enforce, as well
 as specify the root files of the project. The rules the compiler enforces are
 completely customizable and up to you to determine based on your project needs.
 
-There's unlimited ways that you can setup your tsconfig.json file, and a lot of
+There's unlimited ways that you can set up your tsconfig.json file, and a lot of
 different properties you can add to it.
 
 Let's create our tsconfig.json file in the root of our project directory by
@@ -61,7 +61,7 @@ $ touch tsconfig.json
 ```
 
 Awesome. Now let's fill in our properties. Were going to start with a
-`"compilerOptions"` key with an object as it's value. The `"compilerOptions"`
+`"compilerOptions"` key with an object as its value. The `"compilerOptions"`
 object property is what we will use to declare the rules we want to enforce in
 our project. Inside of the `"compilerOptions"` object, we're going to add 3
 properties.
@@ -109,7 +109,7 @@ more compiler options and properties to add to your projects in the future!
 - run node index.js to run our code
 - submit code
 
-Now that we have our `tsconfig.json` setup, we're able to compile our code using
+Now that we have our `tsconfig.json` set up, we're able to compile our code using
 the `tsc` command! There's a ton of different compiler options for us (check out
 [TypeScript Docs - Compiler Options][] to see them all!) to use... we can use
 the command by adding a specific file to it like `npx tsc index.ts`, or we can
