@@ -149,16 +149,16 @@ into JavaScript!
 
 ## Installation Resources
 
-- [TypeScript Docs - Download TypeScript](https://www.typescriptlang.org/download)
-- [Node.js Installation Docs](https://nodejs.org/en/)
-- [Installing NVM & Node.js on MacOS](https://github.com/learn-co-curriculum/phase-0-macos-env-nodejs)
-- [Installing NVM & Node.js on WSL2](https://github.com/learn-co-curriculum/phase-0-wsl2-env-nodejs)
+- [TypeScript Docs - Download TypeScript]: https://www.typescriptlang.org/download
+- [Node.js Installation Docs]: https://nodejs.org/en/
+- [Installing NVM & Node.js on MacOS]: https://github.com/learn-co-curriculum/phase-0-macos-env-nodejs
+- [Installing NVM & Node.js on WSL2]: https://github.com/learn-co-curriculum/phase-0-wsl2-env-nodejs
 
 ## Configuration Resources
 
-- [TypeScript Docs - tsconfig](https://www.typescriptlang.org/tsconfig)
-- [TypeScript Docs - module](https://www.typescriptlang.org/tsconfig#module)
-- [TypeScript Docs - target](https://www.typescriptlang.org/tsconfig#target)
-- [TypeScript Docs - strictNullChecks](https://www.typescriptlang.org/tsconfig#strictNullChecks)
-- [TypeScript Docs - include](https://www.typescriptlang.org/tsconfig#include)
-- [TypeScript Docs - Compiler Options](https://www.typescriptlang.org/docs/handbook/compiler-options.html)
+- [TypeScript Docs - tsconfig]: https://www.typescriptlang.org/tsconfig
+- [TypeScript Docs - module]: https://www.typescriptlang.org/tsconfig#module
+- [TypeScript Docs - target]: https://www.typescriptlang.org/tsconfig#target
+- [TypeScript Docs - strictNullChecks]: https://www.typescriptlang.org/tsconfig#strictNullChecks
+- [TypeScript Docs - include]: https://www.typescriptlang.org/tsconfig#include
+- [TypeScript Docs - Compiler Options]: https://www.typescriptlang.org/docs/handbook/compiler-options.html
